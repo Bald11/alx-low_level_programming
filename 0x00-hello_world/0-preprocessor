@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp *.c c
+gcc -E "$CFILE" -o c
