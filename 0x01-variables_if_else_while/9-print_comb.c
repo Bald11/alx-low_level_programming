@@ -15,10 +15,18 @@ int num = '0';
 while (counter < 10)
 {
 putchar(num);
+if (counter == 9)
+{
+num++;
+counter++;
+}
+else
+{
 putchar(semicolon);
 putchar(space);
 num++;
 counter++;
+}
 }
 putchar(newline);
 return (0);
