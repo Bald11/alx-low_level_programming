@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-char newline = '\n';
-char num = '0';
+int newline = '\n';
+int num = '0';
 int counter = 0;
 while (counter < 10)
 {
