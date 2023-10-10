@@ -7,6 +7,7 @@
  */
 int main(void)
 {
+char newline = '\n';
 char num = '0';
 int counter = 0;
 while (counter < 10)
@@ -15,6 +16,6 @@ putchar(num);
 num++;
 counter++;
 }
-printf("\n");
+putchar(newline);
 return (0);
 }
