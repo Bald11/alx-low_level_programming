@@ -1,4 +1,3 @@
-#include <stddef.h>
 #include <stdio.h>
 
 /**
@@ -14,17 +13,18 @@ char newline = '\n';
 int count = 0;
 while (count < 26)
 {
-if (ch == 'e')
+if (ch == 'e' || ch == 'q')
+{
+ch++;
 continue;
-if (ch == 'q')
-continue;
+}
+else
+{
 putchar(ch);
 count++;
 ch++;
 }
+}
 putchar(newline);
 return (0);
 }
-
-
-
