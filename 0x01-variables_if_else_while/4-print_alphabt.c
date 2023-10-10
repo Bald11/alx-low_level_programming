@@ -15,6 +15,7 @@ while (count < 26)
 {
 if (ch == 'e' || ch == 'q')
 {
+count++;
 ch++;
 continue;
 }
