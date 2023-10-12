@@ -5,17 +5,13 @@
 
 #define myprint() printf("_putchar\n")
 
-void print_alphabet(void);
-/*{
-  char alpha = 'a';
-  int count = 0;
-  while(count < 26)
-    {
-      putchar(alpha);
-      count++;
-      alpha++;
-    }
-  printf("\n");
-  }*/
+void print_alphabet(void)
+{
+  for (char c = 'a'; c <= 'z'; c++)
+  {
+    putchar(c);
+  }
+  putchar('\n');
+}
 
 #endif
