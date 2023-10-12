@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -11,6 +10,6 @@
 
 int main(void)
 {
-myprint("_putchar\n");
+myprint();
 return (0);
 }
