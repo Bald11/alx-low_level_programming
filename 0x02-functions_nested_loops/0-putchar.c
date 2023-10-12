@@ -10,7 +10,9 @@
 
 int main(void)
 {
-char name = "_putchar";
+char newline = '\n';
+char name = '_putchar';
 putchar(name);
+putchar(newline);
 return (0);
 }
