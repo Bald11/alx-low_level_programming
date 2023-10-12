@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * main - The main function
@@ -11,9 +11,6 @@
 
 int main(void)
 {
-char newline = '\n';
-char name = '_putchar';
-putchar(name);
-putchar(newline);
+myprint("_putchar\n");
 return (0);
 }
