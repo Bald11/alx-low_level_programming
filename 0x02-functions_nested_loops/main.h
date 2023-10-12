@@ -5,8 +5,8 @@
 
 #define myprint() printf("_putchar\n")
 
-void print_alphabet_again(void)
-{
+void print_alphabet(void);
+/*{
   char alpha = 'a';
   int count = 0;
   while(count < 26)
@@ -16,6 +16,6 @@ void print_alphabet_again(void)
       alpha++;
     }
   printf("\n");
-}
+  }*/
 
 #endif
