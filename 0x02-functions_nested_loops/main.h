@@ -5,7 +5,7 @@
 
 #define myprint() printf("_putchar\n")
 
-void print_alphabet(void)
+void print_alphabet_again(void)
 {
   char alpha = 'a';
   int count = 0;
