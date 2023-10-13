@@ -11,6 +11,11 @@
 
 int print_last_digit(int x)
 {
+if (x == INT_MIN)
+{
+int cha = '8';
+return (cha + cha);
+}
 if (x < 0)
 {
 x = x * -1;
