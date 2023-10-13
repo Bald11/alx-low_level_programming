@@ -14,15 +14,30 @@ int counter = 0;
 int counterofcounter = 0;
 while(i < 110)
 {
+int result = counter * counterofcounter;
 if(counter == 10) counter = 0, counterofcounter++, printf("\n");
 else if(counter == 9)
 {
-printf("%d", counter * counterofcounter);
+if(result < 10)
+{
+printf(" %d", result);
+}
+else
+{
+printf("%d", result);
+}
 counter++;
 }
 else
 {
-printf("%d, ", counter * counterofcounter);
+if(result < 10 && counter != 0)
+{
+printf(" %d, ", result);
+}
+else
+{
+printf("%d, ", result);
+}
 counter++;
 }
 i++;
