@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * _abs - gives the absolute value
+ * _abs - gives the absolute value of a number
  *
- * @x - character
+ * @x: a character
  *
- * Return - always 1
+ * Return: always 1
  */
 
 int _abs(int x)
