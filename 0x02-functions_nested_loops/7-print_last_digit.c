@@ -11,16 +11,11 @@
 
 int print_last_digit(int x)
 {
-if (x == INT_MIN)
-{
-int cha = '8';
-return (cha + cha);
-}
+x = x % 10;
 if (x < 0)
 {
-x = x * -1;
+x = -x;
 }
-x = x % 10;
 _putchar(x + '0');
 return (x);
 }
