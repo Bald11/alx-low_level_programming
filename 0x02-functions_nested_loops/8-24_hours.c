@@ -2,38 +2,10 @@
 #include <stdio.h>
 
 /**
+ * jack_bauer - prints time from 00:00 to 23:59
  *
- *
- *
- *
+ * Return: void
  */
-
-/*
-void jack_bauer(void)
-{
-for (int i = 0; i < 24; i++)
-{
-for (int j = 0; j < 60; j++)
-{
-if (!isdigit(j) && !isdigit(i))
-{
-if (i < 10)
-{
-_putchar('0');
-}
-printf("%d", i);
-_putchar(':');
-if (j < 10)
-{
-_putchar('0');
-}
-printf("%d", j);
-_putchar('\n');
-}
-}
-}
-}
-*/
 
 void jack_bauer(void)
 {
