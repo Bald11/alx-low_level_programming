@@ -10,7 +10,7 @@
 void print_rev(char *s)
 {
 int x = strlen(s);
-for (int = x - 1; i > 0; i--)
+for (int i = x - 1; i > 0; i--)
 {
 printf("%c", str[i]);
 }
