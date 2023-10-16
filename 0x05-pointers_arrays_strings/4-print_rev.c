@@ -13,7 +13,7 @@ void print_rev(char *s)
 int x = strlen(s);
 while (x > 0)
 {
-printf("%c", s[x-1]);
+printf("%c", s[x - 1]);
 x--;
 }
 printf("\n");
