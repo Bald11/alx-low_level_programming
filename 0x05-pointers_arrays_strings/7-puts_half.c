@@ -13,7 +13,7 @@ void puts_half(char *str)
 int x = 0;
 int n = strlen(str) / 2;
 int y = n;
-while (x < y)
+while (x <= y)
 {
 printf("%c", str[n]);
 n++;
