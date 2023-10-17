@@ -17,7 +17,7 @@ while (y < 15)
 printf("%d", y);
 y++;
 }
-_putchar('\n');
+printf("\n");
 x++;
 y = 0;
 }
