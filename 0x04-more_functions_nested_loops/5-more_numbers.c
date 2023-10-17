@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * more_numbers - prints from 0 to 15, 10 times
@@ -16,7 +17,7 @@ while (y < 15)
 printf("%d", y);
 y++;
 }
-_putchar("\n");
+_putchar('\n');
 x++;
 y = 0;
 }
