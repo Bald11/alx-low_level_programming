@@ -10,7 +10,6 @@
 int _pow_recursion(int x, int y)
 {
 if (y < 0) return (-1);
-double xx = x;
-double yy = y;
-return pow(xx,yy);
+double i = pow(x,y);
+return (i);
 }
