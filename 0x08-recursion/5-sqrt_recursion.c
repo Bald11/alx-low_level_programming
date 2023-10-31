@@ -4,7 +4,7 @@
  * _sqrt_recursive - Recursively searches for the square root.
  * @n: The number for which to find the square root.
  * @guess: The current guess for the square root.
- * Return: The square root of 'n' if found, or -1 if 'n' has no natural square root.
+ * Return: The square root of 'n' if found, or -1 if 'n' has no root
  */
 
 int _sqrt_recursive(int n, int guess)
