@@ -1,4 +1,4 @@
-#include "main.h"
+#include <math.h>
 
 /**
  * _pow_recursion - raise a number to a specified power
