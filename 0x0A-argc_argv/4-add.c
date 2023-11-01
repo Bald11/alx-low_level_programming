@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * isAlphabeticString - check if it's alphabetic
@@ -8,20 +9,19 @@
  * Return: value
  */
 
-int isAlphabeticString(const char *str)
+int isAlphabeticString(char *str)
 {
-if (*str == '\0')
+unsigned int count;
+count = 0;
+while (count < strlen(str))
 {
-return (1);
-}
-else if (!isalpha((unsigned char)*str))
+if (!isdigit(str[count]))
 {
 return (0);
 }
-else
-{
-return (isAlphabeticString(str + 1));
+count++;
 }
+return (1);
 }
 
 /**
@@ -43,15 +43,12 @@ int count = 1;
 int result = 0;
 while (count < argc)
 {
-if (isAlphabeticString(argv[count]))
+if (!isAlphabeticString(argv[count]))
 {
 printf("Error\n");
 return (1);
 }
-
-
 result = result + atoi(argv[count]);
-
 count++;
 }
 printf("%d\n", result);
