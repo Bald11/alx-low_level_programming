@@ -1,12 +1,14 @@
-#include <stdio.h>
+#include <string.h>
 
 /**
- *
- *
- *
+ * _memset - i have no clue
+ * @s: char to pointer
+ * @b: char
+ * @n: integer
+ * Return: return memset
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-  /* code here */
+return (memset(s, b, n));
 }
