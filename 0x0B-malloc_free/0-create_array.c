@@ -13,8 +13,8 @@ if (size == 0)
 {
 return (NULL);
 }
-
 char *array;
+unsigned int i;
 array = (char *)malloc(size * sizeof(char));
 if (array == NULL)
 {
@@ -22,7 +22,6 @@ return (NULL);
 }
 else
 {
-unsigned int i;
 for (i = 0; i < size; i++)
 {
 array[i] = c;
