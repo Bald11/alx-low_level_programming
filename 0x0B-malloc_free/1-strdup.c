@@ -17,10 +17,10 @@ if (str == NULL)
 return (NULL);
 }
 string = (char *)malloc(sizeof(char) * size);
-printf("%s", string);
+strcpy(string, str);
 if (string == NULL)
 {
 return (NULL);
 }
-return (0);
+return (string);
 }
