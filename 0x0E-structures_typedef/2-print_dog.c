@@ -21,14 +21,9 @@ else
 printf("(nil)\n");
 }
 printf("Age: ");
-if (d->age != 0.0)
-{
+
 printf("%f\n", d->age);
-}
-else
-{
-printf("(nil)\n");
-}
+
 printf("Owner: ");
 if (d->owner != NULL)
 {
