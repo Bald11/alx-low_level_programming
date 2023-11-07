@@ -28,5 +28,14 @@ free(x->owner);
 free(x);
 return (NULL);
 }
+
+ x = malloc(sizeof(dog_t));
+ if (dog == NULL)
+ {
+     return (NULL);
+ }
+
+
+ 
 return (x);
 }
