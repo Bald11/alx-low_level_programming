@@ -21,7 +21,7 @@ x = malloc(sizeof(dog_t));
 if (x == NULL)
 {
 return (NULL);
-}   
+}
 x->name = malloc(sizeof(char) * (len1 + 1));
 if (x->name == NULL)
 {
