@@ -27,6 +27,8 @@ free(x->owner);
 free(x);
 return (NULL);
 }
+strcpy(x->name, name);
+strcpy(x->owner, owner);
 x->age = age;
 return (x);
 }
