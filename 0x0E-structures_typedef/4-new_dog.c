@@ -20,6 +20,13 @@ return (NULL);
 }
 x->name = strdup(name);
 x->owner = strdup(owner);
+if (x->name == NULL || x->owner == NULL)
+{
+free(x->name);
+free(x->owner);
+free(x);
+return (NULL);
+}
 x->age = age;
 return (x);
 }
