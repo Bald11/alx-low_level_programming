@@ -11,24 +11,29 @@
 
 int main(int argc, char *argv[])
 {
-int (*calculate)(int, int) = get_op_func(argv[2]);
-int num1 = atoi(argv[1]);
-int num2 = atoi(argv[3]);
-int result = calculate(num1, num2);
-char i = *argv[2];
-if (!calculate || argc != 4)
+int num1, num2, result;
+char i;
+int (*calculate)(int, int);
+if (argc != 4)
 {
 printf("Error\n");
 exit(69);
 }
-if ((i == '/' || i == '%') && num2 == 0)
+num1 = atoi(argv[1]);
+num2 = atoi(argv[3]);
+calculate = get_op_calculate(argv[2]);
+if (!calculate)
 {
 printf("Error\n");
 exit(70);
 }
-else
+i = *argv[2];
+if ((i == '/' || i == '%') && num2 == 0)
 {
-printf("%d\n", result);
+printf("Error\n");
+exit(71);
 }
+result = calculate(num1, num2);
+printf("%d\n", result);
 return (0);
 }
