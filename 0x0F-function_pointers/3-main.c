@@ -21,7 +21,7 @@ exit(69);
 }
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
-calculate = get_op_calculate(argv[2]);
+calculate = get_op_func(argv[2]);
 if (!calculate)
 {
 printf("Error\n");
