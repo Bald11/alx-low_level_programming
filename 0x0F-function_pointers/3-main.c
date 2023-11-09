@@ -17,7 +17,7 @@ int (*calculate)(int, int);
 if (argc != 4)
 {
 printf("Error\n");
-exit(69);
+exit(98);
 }
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
@@ -25,13 +25,13 @@ calculate = get_op_func(argv[2]);
 if (!calculate)
 {
 printf("Error\n");
-exit(70);
+exit(99);
 }
 i = *argv[2];
 if ((i == '/' || i == '%') && num2 == 0)
 {
 printf("Error\n");
-exit(71);
+exit(100);
 }
 result = calculate(num1, num2);
 printf("%d\n", result);
