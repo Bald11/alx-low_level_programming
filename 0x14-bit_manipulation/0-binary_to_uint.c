@@ -6,6 +6,25 @@
 #include <ctype.h>
 
 /**
+ * _pow - Calculates the power of a given base raised to the given exponent.
+ * @base: The base number.
+ * @exponent: The exponent.
+ *
+ * Return: The result of base raised to the power of exponent.
+ */
+unsigned long int _pow(unsigned int base, unsigned int exponent)
+{
+unsigned long int result;
+unsigned int i;
+result = 1;
+for (i = 1; i <= exponent; i++)
+{
+result *= base;
+}
+return (result);
+}
+
+/**
  * ContainAlpha - checks for any alphabetic characters
  * @b: the passed string
  * Return: 1 if a character is found else 0
@@ -38,8 +57,8 @@ size_t strLength = strlen(b);
 int *max_value = (int *)malloc(strLength * sizeof(int));
 int *intArray = (int *)malloc(strLength * sizeof(int));
 int index = 0;
-int absolute_result = 0;
 int j;
+unsigned int absolute_result = 0;
 double result;
 if (b == NULL || ContainAlpha(b) == 1)
 {
@@ -62,7 +81,7 @@ if (max_value[k] == 0)
 {
 continue;
 }
-result = pow(2, i);
+result = _pow(2, k);
 absolute_result = absolute_result + (int)result;
 }
 free(intArray);
