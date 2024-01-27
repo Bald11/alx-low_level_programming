@@ -1,0 +1,71 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+/**
+ * ContainAlpha - checks for any alphabetic characters
+ * @b: the passed string
+ * Return: 1 if a character is found else 0
+ */
+
+int ContainAlpha(const char *b)
+{
+while (*b)
+{
+if (isalpha(*b))
+{
+return (1);
+}
+b++;
+}
+return (0);
+}
+
+/**
+ * binary_to_uint - converts binary number to unsigned int
+ * @b: const char to pointer
+ * Return: returns 0 if theres a char in string b else the result
+ */
+
+unsigned int binary_to_uint(const char *b)
+{
+size_t i;
+size_t k;
+size_t strLength = strlen(b);
+int *max_value = (int *)malloc(strLength * sizeof(int));
+int *intArray = (int *)malloc(strLength * sizeof(int));
+int index = 0;
+int absolute_result = 0;
+int j;
+double result;
+if (b == NULL || ContainAlpha(b) == 1)
+{
+free(max_value);
+free(intArray);
+return (0);
+}
+for (i = 0; i < strLength; i++)
+{
+intArray[i] = b[i] - '0';
+}
+for (j = strLength - 1; j > -1; j--)
+{
+max_value[index] = intArray[j];
+index++;
+}
+for (k = 0; k < strLength; k++)
+{
+if (max_value[k] == 0)
+{
+continue;
+}
+result = pow(2, i);
+absolute_result = absolute_result + (int)result;
+}
+free(intArray);
+free(max_value);
+return (absolute_result);
+}
