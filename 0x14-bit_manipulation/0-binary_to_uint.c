@@ -44,6 +44,25 @@ return (0);
 }
 
 /**
+ * IsNotOneOrZero - checks for the numbers 1 and 0 in *b
+ * @b: the passed string
+ * Return: 1 if it doesn't contain 1 and 0, else 0
+ */
+
+int IsNotOneOrZero(const char *b)
+{
+while (*b)
+{
+if (*b != '1' && *b != '0')
+{
+return (1);
+}
+b++;
+}
+return (0);
+}
+
+/**
  * binary_to_uint - converts binary number to unsigned int
  * @b: const char to pointer
  * Return: returns 0 if theres a char in string b else the result
@@ -60,7 +79,7 @@ int index = 0;
 int j;
 unsigned int absolute_result = 0;
 double result;
-if (b == NULL || ContainAlpha(b) == 1)
+if (b == NULL || ContainAlpha(b) == 1 || IsNotOneOrZero(b) == 1)
 {
 free(max_value);
 free(intArray);
